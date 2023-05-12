@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Eventos </title>
+</head>
+
+<body>
+    <main>
+        <h1>EJERCICIOS EVENTOS</h1>
+
+        <!-- Ejercicio 1 * -->
+
+        <div class="itens">
+            <form class="form">
+                <h2>Calculadora de IMC</h2>
+                <label for="peso">Peso (en kg):</label>
+                <input type="number" id="peso" name="peso"><br>
+                <label for="altura">Altura (en m):</label>
+                <input type="number" id="altura" name="altura"><br>
+                <button type="button" onclick="calcularIMC()">Calcular</button>
+                <br>
+                <label for="imc">IMC:</label>
+                <input type="text" id="imc" name="imc" readonly>
+            </form>
+
+        </div>
+
+
+
+        <!-- Ejercicio 2 ** -->
+
+        <form class="contenedor">
+            <h2>CONVERSOR DE DIVISA</h2>
+            <p>Selecionar Moneda </p>
+            <input type="radio" name="cambio" id="uno">Dólar
+            <input type="radio" name="cambio" id="dos">Pesos Argentino
+
+            <p>Ingrese monto:</p>
+
+            <input type="number" id="valor" min="0" max="10000000">
+            <input type="button" id="cotizador" value="Cotizar" onclick="convertir()">
+            <h4 id="cambio">// Tu cambio es: $0.00 //</h4>
+
+        </form>
+    </main>
+    <script src="./assets/main.js"></script>
+    
+
+</body>
+
+</html>
